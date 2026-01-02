@@ -1,0 +1,14 @@
+# Cache Control - Set cache timeout to less than one minute (59 seconds)
+
+<IfModule mod_expires.c>
+    # Enable expiration control
+    ExpiresActive On
+    
+    # Set default expiration to 59 seconds for all files
+    ExpiresDefault "access plus 59 seconds"
+</IfModule>
+
+<IfModule mod_headers.c>
+    # Set Cache-Control header for all files
+    Header set Cache-Control "max-age=59, public"
+</IfModule>
