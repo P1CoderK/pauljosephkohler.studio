@@ -490,7 +490,7 @@ p {
   background: transparent; /* show body gradient for smooth color flow */
   color: #fff;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 /* Emphasize blue in the bottom section (teacher) while keeping the continuous page gradient */
@@ -850,6 +850,14 @@ p {
 
   .samples-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0;
+  }
+
+  .sample-item {
+    width: 100%;
+    padding: 1.5rem;
+    margin: 0;
   }
 
   .services-grid {
@@ -948,6 +956,18 @@ p {
   .contact-item i {
     font-size: 1.2rem;
     margin-right: 0.75rem;
+  }
+
+  .samples-grid {
+    gap: 1rem;
+  }
+
+  .sample-item {
+    padding: 1rem;
+  }
+
+  .sample-item h4 {
+    font-size: 1.1rem;
   }
 
   .footer {
