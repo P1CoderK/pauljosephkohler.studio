@@ -881,7 +881,8 @@ p {
   }
 
   .section {
-    padding: 100px 0 60px;
+    padding: 60px 0 40px;
+    min-height: auto;
   }
 }
 
