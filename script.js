@@ -92,28 +92,28 @@ document.addEventListener("DOMContentLoaded", function () {
   // Add loading animation for sample items
   const sampleItems = document.querySelectorAll(".sample-item");
   sampleItems.forEach((item, index) => {
-    item.style.animationDelay = `${index * 0.1}s`;
+    item.style.animationDelay = `${index * 0.05}s`;
     item.classList.add("fade-in");
   });
 
   // Add loading animation for service items
   const serviceItems = document.querySelectorAll(".service-item");
   serviceItems.forEach((item, index) => {
-    item.style.animationDelay = `${index * 0.1}s`;
+    item.style.animationDelay = `${index * 0.05}s`;
     item.classList.add("fade-in");
   });
 
   // Add loading animation for testimonial items
   const testimonialItems = document.querySelectorAll(".testimonial-item");
   testimonialItems.forEach((item, index) => {
-    item.style.animationDelay = `${index * 0.1}s`;
+    item.style.animationDelay = `${index * 0.05}s`;
     item.classList.add("fade-in");
   });
 
   // Intersection Observer for fade-in animations
   const observerOptions = {
-    threshold: 0.05,
-    rootMargin: "0px 0px -20px 0px",
+    threshold: 0,
+    rootMargin: "0px 0px 200px 0px",
   };
 
   const observer = new IntersectionObserver(function (entries) {
@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
   sections.forEach((section) => {
     section.style.opacity = "0";
     section.style.transform = "translateY(20px)";
-    section.style.transition = "opacity 0.4s ease, transform 0.4s ease";
+    section.style.transition = "opacity 0.2s ease, transform 0.2s ease";
     observer.observe(section);
   });
 
@@ -151,7 +151,7 @@ style.textContent = `
     .fade-in {
         opacity: 0;
         transform: translateY(20px);
-        animation: fadeInUp 0.4s ease forwards;
+        animation: fadeInUp 0.2s ease forwards;
     }
 
     @keyframes fadeInUp {
@@ -166,7 +166,7 @@ style.textContent = `
     .testimonial-item {
         opacity: 0;
         transform: translateY(20px);
-        transition: opacity 0.4s ease, transform 0.4s ease;
+        transition: opacity 0.2s ease, transform 0.2s ease;
     }
 
     .sample-item.fade-in,
