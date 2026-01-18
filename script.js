@@ -132,8 +132,8 @@ document.addEventListener("DOMContentLoaded", function () {
   // Observe all sections for animation
   sections.forEach((section) => {
     section.style.opacity = "0";
-    section.style.transform = "translateY(20px)";
-    section.style.transition = "opacity 0.2s ease, transform 0.2s ease";
+    section.style.transform = "translateY(10px)";
+    section.style.transition = "opacity 0.15s ease, transform 0.15s ease";
     observer.observe(section);
   });
 
