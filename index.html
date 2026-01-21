@@ -40,6 +40,9 @@
     <meta name="twitter:description" content="Professional piano accompanist and teacher in Utah County. 30+ years experience." />
     <meta name="twitter:image" content="https://pauljosephkohler.studio/images/headshot.jpg" />
     
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://pauljosephkohler.studio/" />
+    
     <link rel="stylesheet" href="styles.css?v=2" />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&family=Lora:wght@400;600&display=swap"
@@ -54,12 +57,14 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "MusicGroup",
+      "@type": "Person",
       "name": "Paul Joseph Kohler",
-      "genre": "Classical, Contemporary, Jazz",
+      "jobTitle": "Pianist, Piano Accompanist, Music Teacher",
       "url": "https://pauljosephkohler.studio",
       "image": "https://pauljosephkohler.studio/images/headshot.jpg",
       "description": "Professional piano accompanist and teacher in Utah County with over 30 years of experience.",
+      "email": "paul.kohler.pianist@gmail.com",
+      "telephone": "+1-520-551-6218",
       "address": {
         "@type": "PostalAddress",
         "addressRegion": "UT",
@@ -67,15 +72,30 @@
         "addressCountry": "US"
       },
       "areaServed": [
-        "Utah County",
-        "Salt Lake County",
-        "Provo",
-        "Orem",
-        "Salt Lake City",
-        "Utah Valley",
-        "Lehi",
-        "American Fork",
-        "Pleasant Grove"
+        {
+          "@type": "City",
+          "name": "Provo"
+        },
+        {
+          "@type": "City",
+          "name": "Orem"
+        },
+        {
+          "@type": "City",
+          "name": "Salt Lake City"
+        },
+        {
+          "@type": "City",
+          "name": "Lehi"
+        },
+        {
+          "@type": "City",
+          "name": "American Fork"
+        },
+        {
+          "@type": "City",
+          "name": "Pleasant Grove"
+        }
       ],
       "memberOf": [
         {
@@ -91,44 +111,49 @@
           "name": "SCERA Chamber Singers"
         }
       ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+1-520-551-6218",
-        "email": "paul.kohler.pianist@gmail.com",
-        "contactType": "Customer Service"
-      },
-      "performer": {
-        "@type": "Person",
-        "name": "Paul Joseph Kohler",
-        "jobTitle": "Pianist, Accompanist, Music Teacher",
-        "alumniOf": [
-          {
-            "@type": "CollegeOrUniversity",
-            "name": "Utah Valley University"
-          },
-          {
-            "@type": "CollegeOrUniversity",
-            "name": "University of Arizona"
-          }
-        ]
-      },
-      "offers": [
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Utah Valley University"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Arizona"
+        }
+      ],
+      "knowsAbout": [
+        "Piano Performance",
+        "Piano Accompaniment",
+        "Music Education",
+        "Classical Music",
+        "Contemporary Music",
+        "Jazz",
+        "Music Theory",
+        "Chamber Music"
+      ],
+      "makesOffer": [
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
             "name": "Piano Accompaniment",
             "description": "Professional piano accompaniment for vocalists, instrumentalists, recitals, and performances",
-            "areaServed": "Utah County and Salt Lake County, UT"
+            "provider": {
+              "@type": "Person",
+              "name": "Paul Joseph Kohler"
+            }
           }
         },
         {
           "@type": "Offer",
           "itemOffered": {
-            "@type": "Service",
+            "@type": "EducationEvent",
             "name": "Piano Lessons",
             "description": "Private piano instruction for students of all levels",
-            "areaServed": "Utah County and Salt Lake County, UT"
+            "provider": {
+              "@type": "Person",
+              "name": "Paul Joseph Kohler"
+            }
           },
           "availability": "https://schema.org/InStock"
         }
